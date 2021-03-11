@@ -5,8 +5,8 @@
 // 4. module.export ile fonksiyonlar ihrac edilecek.
 // 5. index.js de require ile ithal edilen fonksiyonlar calistirilacak.
 
-const miladiTakvimDonusturme = require("./miladi-converter");//kod ithal edildi.
-const hicriTakvimDonusturme = require("./hicri-converter");//kod ithal edildi.
+const miladiConvert = require("./miladi-converter");//kod ithal edildi.
+const hicriConvert = require("./hicri-converter");//kod ithal edildi.
 
-console.log(miladiTakvimDonusturme.miladi(1000));
-console.log(hicriTakvimDonusturme.hicri(1000));
+console.log("Girmis oldugunuz hicri tarihin karsiligi = "+ miladiConvert("2021"));
+console.log("Girmis oldugunuz miladi tarihin karsiligi = " + hicriConvert("1440"));
